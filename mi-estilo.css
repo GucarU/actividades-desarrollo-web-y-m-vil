@@ -1,0 +1,29 @@
+.fila {
+       display: flex;
+   }
+
+.columna {
+       width: 33%;
+       text-align: center;
+   }
+
+.contenedor-principal {
+    margin-top: 40px;
+}
+
+.titulo-centrado {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333333; 
+}
+
+.espaciado-abajo {
+    margin-bottom: 40px;
+}
+
+.columna-texto {
+    padding: 15px;
+    border: 1px solid #cccccc;
+    border-radius: 10px; 
+    background-color: #f8f9fa;
+}

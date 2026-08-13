@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dead by Daylight - Actividad Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="mi-estilo.css">
+</head>
+<body>
+
+<div class="container contenedor-principal">
+    
+    <h1 class="titulo-centrado">Dead by Daylight</h1>
+
+    <!-- carrusel con imágenes -->
+    <div id="carruselDBD" class="carousel slide espaciado-abajo" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="1366_2000.jpeg" class="d-block w-100" alt="Dead by daylight killer">
+            </div>
+            <div class="carousel-item">
+                <img src="dead-by-daylight-mobile-yj.jpg" class="d-block w-100" alt="Characters of Dead By Daylight">
+            </div>
+            <div class="carousel-item">
+                <img src="dead-by-daylight-video-games-video-game-art-horror-hd-wallpaper-preview.jpg" class="d-block w-100" alt="Meg and Doctor">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carruselDBD" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carruselDBD" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+        </button>
+    </div>
+
+    <!-- texto en 2 columnas PC y 1 columna móvil -->
+    <div class="row espaciado-abajo">
+        <div class="col-12 col-md-6">
+            <!-- estilo con clase propia para darle diseño a la columna -->
+            <div class="columna-texto">
+                <h3>Sobre el Juego</h3>
+                <p>Dead by Daylight es un juego multijugador del estilo escondite, pero de terror. En cada partida, cuatro personas juegan como sobrevivientes y tienen que trabajar en equipo para escapar de un quinto jugador, que toma el rol de un asesino implacable.</p>
+            </div>
+        </div>
+        <div class="col-12 col-md-6">
+            <div class="columna-texto">
+                <h3>Cómo se gana</h3>
+                <p>Los sobrevivientes no tienen armas, así que su única opción es reparar cinco generadores para darle energía a las puertas de salida y escapar. Por su parte, el asesino debe usar su fuerza y habilidades para cazarlos, golpearlos y colgarlos en ganchos antes de que huyan.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- texto en acordeón -->
+    <div class="accordion espaciado-abajo" id="acordeonInfo">
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#colapsoUno" aria-expanded="true" aria-controls="colapsoUno">
+                    Variedad de personajes
+                </button>
+            </h2>
+            <div id="colapsoUno" class="accordion-collapse collapse show" data-bs-parent="#acordeonInfo">
+                <div class="accordion-body">
+                    Lo genial del juego es que tiene un montón de personajes. Puedes jugar con asesinos originales del juego o elegir a iconos de películas de terror clásicas, como Michael Myers, Ghostface o Chucky. Cada asesino tiene un poder único, por lo que ninguna partida es igual a la anterior.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#colapsoDos" aria-expanded="false" aria-controls="colapsoDos">
+                    Consejos para no morir (tanto)
+                </button>
+            </h2>
+            <div id="colapsoDos" class="accordion-collapse collapse" data-bs-parent="#acordeonInfo">
+                <div class="accordion-body">
+                    Si juegas de sobreviviente, la regla de oro es: no corras por todo el mapa si no te están persiguiendo. Al correr dejas unas marcas rojas en el suelo que el asesino puede ver fácilmente para rastrearte. Además, siempre mueve la cámara mientras reparas un generador para que no te tomen por sorpresa.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- enlaces a los scripts de bootstrap para que el carrusel y acordeón funcionen -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
